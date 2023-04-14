@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    //border: 1px solid red;
+}
+
+html, body {
+    padding: 0;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 2rem;
+}
+
+.img-container {
+    width: 50%;
+}
+
+img {
+    width: 100%;
+}
+
+.lasagna-description{
+    width: 50%;
+}
+
+a {
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    margin-top: 4px;
+    display: inline-block;
+    transition: 0.2s ease-in-out;
+}
+
+a:hover{
+    background-color: transparent;
+    color: black;
+    transition: 0.2s ease-in-out;
+}
+
+@media (max-width: 500px) {
+
+    .container > .img-container, .lasagna-description, .odin-heading{
+        text-align: center;
+    }
+
+    .img-container, .lasagna-description, .odin-heading {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .odin-heading {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .container {
+        width: 700px;
+    }
+
+    .lasagna-heading {
+        margin-top: 0;
+    }
+
+    a {
+        margin: 0
+    }
+}
+
+//lasagna html
+
+.lasagna-container {
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lasagna-container > .lasagna-title, h3 {
+    text-align: center;
+}
+
+.ingredients, .steps {
+    width: 50%;
+}
+
+.back-button {
+    display: flex;
+    justify-content: center;
+    max-width: 125px;
+    width: 100%;
+    margin: 5px auto;
+}
+
+@media (max-width: 500px) {
+
+    .lasagna-title {
+        margin-top: 2rem;
+        margin-bottom: 0;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .ingredients, .steps {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .lasagna-container {
+        width: 500px;
+    }
+
+    .ingredients, .steps {
+        font-size: 15px;
+    }
+
+    .back-button {
+        margin-top: 10px;
+    }
+}
